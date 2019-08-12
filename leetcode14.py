@@ -20,6 +20,7 @@ class Solution:
                     return strs[0][:end]
             end += 1
         return strs[0][:end]
+    
 if __name__ == "__main__":
     strs = ["flower","flow","flight"]
     solution = Solution()
