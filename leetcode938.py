@@ -63,21 +63,21 @@ def TreeDelete(T, z):
 def Midsort(root):
     if root!= None:
         Midsort(root.left)
-        if root.key!=0:
-            print(root.key)
+        if root.val!=0:
+            print(root.val)
         Midsort(root.right)
 
 def Behsort(root):
     if root!= None:
         Behsort(root.left)
         Behsort(root.right)
-        if root.key != 0:
-            print(root.key)
+        if root.val != 0:
+            print(root.val)
 
 def Presort(root):
     if root!= None:
-        if root.key != 0:
-            print(root.key)
+        if root.val != 0:
+            print(root.val)
         Presort(root.left)
         Presort(root.right)
 
@@ -108,6 +108,7 @@ if __name__ == '__main__':
     T = Tree()
     for nodes in node:
         print(TreeInsert(T, Node(nodes)))
+    Behsort(T.root)
 
     solution = Solution()
     print(solution.rangeSumBST(T.root, 7, 15))
