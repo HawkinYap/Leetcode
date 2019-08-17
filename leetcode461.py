@@ -6,9 +6,7 @@ class Solution(object):
         :rtype: int
         """
         n = x ^ y
-        print(n)
         n = bin(n)
-        print(n)
         return(n.count('1'))
 
 if __name__ == '__main__':
