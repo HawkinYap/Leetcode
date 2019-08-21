@@ -4,13 +4,14 @@ class Solution(object):
         :type num: int
         :rtype: int
         """
-        newBit = ""
-        for i in bin(num)[2:]:
-            if i == '0':
-                newBit += "1"
-            else:
-                newBit += "0"
-        return(int('0b' + newBit, 2))
+        # Bit = ""
+        # for i in bin(num)[2:]:
+        #     if i == '0':
+        #         Bit += "1"
+        #     else:
+        #         Bit += "0"
+        # return(int('0b' + Bit, 2))
+        return(int("".join(map(lambda x: '1' if x == '0' else '0', bin(num)[2:])), 2))
 
 if __name__ == '__main__':
     num = 5
