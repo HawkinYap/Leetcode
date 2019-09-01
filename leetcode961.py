@@ -11,9 +11,16 @@ class Solution(object):
         #         max = A.count(i)
         #         index = i
         # return(index)
+        # for a in A:
+        #     if A.count(a) == int(len(A)/2 ):
+        #         return(a)
+
+        dic = {}
         for a in A:
-            if A.count(a) == int(len(A)/2 ):
-                return(a)
+            if a in dic:
+                return a
+            else:
+                dic[a] = 1
 
 if __name__ == '__main__':
     A = [1, 2, 3, 3]
