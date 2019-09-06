@@ -17,7 +17,7 @@ import string
 
 class Codec:
 
-    alphabet = string.ascii_letters + '0123456789'
+    alphabet = string.ascii_letters + string.digits
     # print(string.ascii_letters)
     
     def __init__(self):
