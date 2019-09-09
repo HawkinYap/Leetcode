@@ -10,12 +10,13 @@ class Solution:
         #     return(2)
         # return(self.rectCover(number - 2) + self.rectCover(number - 1))
         if number <= 0:
-            return(0)
-        a, b = 1, 2
-        while number >= 2:
-            a, b = b, a + b
-            number -= 2
-        return(a)
+        return 0
+        list = [1,2]
+        while number>=2:
+            list[0],list[1] = list[1], list[0]+list[1]
+            number -= 1
+        return list[0]
+
 
 
 
