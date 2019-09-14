@@ -18,8 +18,8 @@ class Solution(object):
         r = [[1]]
         for i in range(1,numRows):
             r.append(list(map(lambda x,y:x+y, [0]+r[-1],r[-1]+[0])))
-        # return r[:numRows]
-        return r
+        return r[:numRows]
+        # return r
 
 if __name__ == '__main__':
     numRows = 5
