@@ -5,6 +5,26 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
+        # res = []
+        # for i in nums1:
+        #     if i == max(nums2):
+        #         res.append(-1)
+        #     elif i == nums2[-1]:
+        #         res.append(-1)
+        #     else:
+        #         tmp = nums2.index(i)
+        #         m = nums2[tmp + 1:]
+        #         flag = 0
+        #         for j in m:
+        #             if j > i:
+        #                 flag = 1
+        #                 res.append(j)
+        #                 break
+        #         if flag == 0:
+        #             res.append(-1)
+                
+        # return(res)
+
         stack = []
         hashmap = {}
         
