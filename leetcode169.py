@@ -13,8 +13,9 @@ class Solution(object):
         #         if count == 0:
         #             maj = nums[i + 1]
         # return(maj)
-        nums.sort()
-        return nums[int(len(nums)/2)]
+        # nums.sort()
+        # return nums[int(len(nums)/2)]
+        return(max(set(nums), key=nums.count))
 
 if __name__ == '__main__':
     nums = [3, 2, 3]
