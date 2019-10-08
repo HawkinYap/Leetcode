@@ -13,7 +13,6 @@ class Solution(object):
             res.append(count)
         return(min(res))
 
-
         
 if __name__ == '__main__':
     chips = [1, 2, 3]
