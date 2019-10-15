@@ -10,4 +10,4 @@ class Solution(object):
 if __name__ == '__main__':
     n = 1111111111100000001
     s = Solution()
-    print(s.hammingWeight(n))
+    print(s.hammingWeight(n))git
