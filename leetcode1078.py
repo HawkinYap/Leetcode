@@ -20,7 +20,7 @@ class Solution(object):
         import re
         # pattern = f'(?<={first}\s{second}\s)\w+'
         # return re.findall(pattern, text)
-        return re.findall(f'(?<={first}\W{second}\W)\w+', text)
+        # return re.findall(f'(?<={first}\W{second}\W)\w+', text)
 
 
 
