@@ -22,7 +22,7 @@ class Solution(object):
                 tmp += A[ind]
             res.append(tmp)
             
-        return res
+        return(res)
 
 if __name__ == "__main__":
     A = [1,2,3,4]
