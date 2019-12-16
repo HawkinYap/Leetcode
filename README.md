@@ -125,3 +125,6 @@
 # 笔试真题
 - 1 cvte1
 - 2 cvte2
+
+# 代码风格较好的网站
+https://leetcode-cn.com/problems/verifying-an-alien-dictionary/comments/
