@@ -19,8 +19,6 @@ class Solution(object):
         # return([fz, fm])
 
         if len(cont) == 1:
-            print('***')
-            print(cont)
             return [cont[0], 1]
         elif len(cont) == 2:
             a, b = cont
@@ -28,7 +26,6 @@ class Solution(object):
             return [a*b+1, b]
         else:
             b, a = self.fraction(cont[1:])
-            print('---')
             print(b, a)
             return([b*cont[0]+a, b])
 
