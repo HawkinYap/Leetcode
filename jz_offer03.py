@@ -14,6 +14,6 @@ class Solution:
             current = listNode
             arraylist = []
             while listNode:
-                arraylist.append(listNode.val)
-                listNode = listNode.next
+                arraylist.append(current.val)
+                current = current.next
             return arraylist[::-1]
